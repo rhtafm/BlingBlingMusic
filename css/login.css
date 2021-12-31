@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font: 14px/1.5px Arial;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(291deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+#wel {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 125px;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+.flip-modal {
+    display: block!important;
+}
+
+
+/*这个白框*/
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.36);
+    box-shadow: 1px 2px 9px 4px rgba(3, 3, 3, 0.2);
+}
+
+
+/*'登录注册'四字文本居中*/
+
+.return {
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 10px;
+    color: #131313;
+}
+
+.modal .tabs {
+    text-align: center;
+}
+
+.modal .tabs a {
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 10px;
+    color: #131313;
+}
+
+
+/*下划线*/
+
+.modal .active {
+    border-bottom: 2px solid #ed6f6f;
+    color: #444;
+    padding-bottom: 10px;
+}
+
+.modal .active:hover {
+    opacity: 0.8;
+}
+
+
+/*设置容器大小*/
+
+.modal .content {
+    padding: 20px 43px;
+}
+
+
+/*设置字体大小、颜色*/
+
+.modal .errormsg {
+    color: #ff002d;
+    font-size: 12px;
+}
+
+
+/*div定位做字体图标的坐标*/
+
+.modal .content .input-field {
+    position: relative;
+    margin-top: 10px;
+}
+
+
+/*字体图标定位*/
+
+.modal .content .input-field .fa {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+}
+
+
+/*设置登录和密码，居中，占满剩余长度*/
+
+.modal .content input[type=text],
+.modal .content input[type=password] {
+    width: 100%;
+    padding: 10px 10px 10px 28px;
+}
+
+
+/*提交按钮*/
+
+.modal .content input[type=submit] {
+    padding: 6px 10px;
+    border: none;
+    background: #fff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.36);
+}
+
+
+/*CSS3 旋转动画 */
+
+.flip-modal.login .modal-login,
+.flip-modal.register .modal-register {
+    transform: translate(-50%, -50%);
+    /* 水平居中 */
+    backface-visibility: hidden;
+    transition: all 1s;
+    /* 让翻转有一个过渡 而不是瞬间翻转*/
+}
+
+.flip-modal.login .modal-register,
+.flip-modal.register .modal-login {
+    transform: translate(-50%, -50%) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 1s;
+}

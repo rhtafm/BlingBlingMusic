@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'BlingBling';
+    src: url('../font/font.ttf');
+}
+
+html,
+body {
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg, #ffffff 0%, #97D9E1 100%);
+}
+
+.content {
+    height: 760px;
+}
+
+.about-img {
+    height: 400px;
+    width: 100%;
+}
+
+.word {
+    position: absolute;
+    width: 500px;
+    top: 75%;
+    left: 20%;
+}
+
+.brand {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    display: inline-block;
+    font-size: 100px;
+    font-family: 'BlingBling';
+}

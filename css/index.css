@@ -1,0 +1,310 @@
+html,
+body {
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg, #ffffff 0%, #97D9E1 100%);
+}
+
+
+/*===轮播=====*/
+
+.lunbanner {
+    position: relative;
+}
+
+.lunbo {
+    position: relative;
+    height: 400px;
+    width: 1400px;
+    background: url(../images/banner1.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.lun_list {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    width: 170px;
+    height: 20px;
+}
+
+.lun_list ul li {
+    float: left;
+    margin-left: 15px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+}
+
+.lun_list ul li:hover {
+    cursor: pointer;
+}
+
+.lun_list .foucus_list {
+    background: #2E93D6;
+    width: 35px;
+    border-radius: 90px;
+}
+
+
+/*recomend热门推荐*/
+
+.recommend {
+    position: relative;
+    top: 30px;
+    width: 1250px;
+    height: auto;
+    text-align: center;
+}
+
+.r_title {
+    font-size: 32px;
+}
+
+.r_infro {
+    color: #307DE3;
+}
+
+.r_pic {
+    margin-top: 30px;
+    width: 100%;
+    height: 460px;
+}
+
+.r_pic div {
+    position: relative;
+    float: left;
+    width: 395px;
+    margin-right: 10px;
+}
+
+.r_pic div:hover {
+    cursor: pointer;
+}
+
+.p1 {
+    height: 85%;
+    background: url(../images/fengpic.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.p1:hover {
+    background-size: 105%;
+}
+
+.p1:hover .r_cover {
+    display: block;
+}
+
+.r_cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 13, 13, .5);
+    display: none;
+}
+
+.p2 {
+    margin-bottom: 10px;
+    height: 225px;
+    background: url(../images/findpic.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.p2:hover {
+    background-size: 105%;
+}
+
+.p2:hover .r_cover {
+    display: block;
+}
+
+.p3 {
+    margin-bottom: 10px;
+    height: 225px;
+    background: url(../images/glodpic.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.p3:hover {
+    background-size: 105%;
+}
+
+.p3:hover .r_cover {
+    display: block;
+}
+
+.p4 {
+    height: 225px;
+    background: url(../images/warmpic.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.r_title {
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.r_line {
+    display: inline-block;
+    height: 3px;
+    width: 60px;
+    background: rgba(229, 227, 227, .7);
+}
+
+.r_font {
+    margin-top: 15px;
+    color: white;
+}
+
+.r_btn {
+    margin-top: 15px;
+}
+
+.r_title_one {
+    margin-top: 100px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.r_line_one {
+    margin-top: 20px;
+    display: inline-block;
+    height: 3px;
+    width: 60px;
+    background: rgba(229, 227, 227, .7);
+}
+
+.r_font_one {
+    margin-top: 30px;
+    color: white;
+}
+
+.r_btn_one {
+    margin-top: 30px;
+}
+
+.p4:hover {
+    background-size: 105%;
+}
+
+.p4:hover .r_cover {
+    display: block;
+}
+
+.p5 {
+    height: 225px;
+    background: url(../images/lightpic.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.p5:hover {
+    background-size: 105%;
+}
+
+.p5:hover .r_cover {
+    display: block;
+}
+
+.feature_mv {
+    position: relative;
+    width: 1250px;
+    height: 950px;
+    text-align: center;
+}
+
+.feature_mv .r_title {
+    margin-top: 100px;
+}
+
+.content {
+    margin-top: 30px;
+    width: 100%;
+    height: 740px;
+}
+
+.infro {
+    float: left;
+    width: 50%;
+    height: 375px;
+}
+
+.infro:nth-of-type(1) {
+    position: relative;
+    background: url(../images/video1.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.f_con_cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(116, 116, 116, .3);
+    display: none;
+}
+
+.video_play {
+    display: inline-block;
+    position: inherit;
+    left: 0;
+    right: 0;
+    top: 40%;
+}
+
+.play_video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: none;
+}
+
+.infro:nth-of-type(4) {
+    position: relative;
+    background: url(../images/video2.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.infro:nth-of-type(1):hover .f_con_cover {
+    display: block;
+}
+
+.infro:nth-of-type(4):hover .f_con_cover {
+    display: block;
+}
+
+.infro:nth-of-type(1):hover,
+.infro:nth-of-type(4):hover {
+    cursor: pointer;
+    background-size: 105%;
+}
+
+.f_infro_t {
+    margin-top: 30px;
+    font-size: 40px;
+    color: #2E93D6;
+    text-align: left;
+    text-indent: 30px;
+}
+
+.f_infro_con {
+    text-align: left;
+    width: 90%;
+    color: #666666;
+    margin-top: 20px;
+    font-size: 17.5px;
+}
+
+.f_btn {
+    margin-top: 40px;
+    text-align: left;
+    text-indent: 30px;
+}
+
+.f_t2 {
+    text-indent: 0;
+    margin-left: 0;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>入驻音乐人</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/join.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_con">
+            <div class="logo"><a href="index.html">BlingBling</a></div>
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="index.html">首页</a>
+                    <div></div>
+                </li>
+                <li class="nav_li"><a href="list.html">歌单</a>
+                    <div></div>
+                </li>
+                <li class="nav_li"><a href="musician.html">歌手</a>
+                    <div></div>
+                </li>
+                <li class="nav_li"><a href="join.html" class="active_hover">入驻音乐人</a>
+                    <div></div>
+                </li>
+                <li class="nav_li"><a href="login.html">登录/注册</a>
+                    <div></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner"></div>
+    <div class="conntent">
+        <div class="con">
+            <ul>
+                <li>
+                    <div class="title">
+                        <span>·&nbsp;流量在手，推广不愁。在开放平台签到、评论、参与活动等均可赚取流量，自主发起作品推广，你的作品你说了算</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <span>·&nbsp;作品绿色管理通行。一站式作品发布、签约、管理，快捷发布歌曲、电台、视频、专栏等更多音乐内容</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <span>·&nbsp;创作变现，真心实意。极具诚意的变现方案即将公布，保护创作者应有的权益，分成方案诚意满满。</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <span>·&nbsp;预计48小时内完成资料审核，您也可在此查看您的审核进度。</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="onmid">
+            <input type="button" value="立即入驻" class="btn">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_con">
+            <div class="footer_font">
+                <ul>
+                    <li><a href="about.html">关于BlingBling音乐 </a>
+                        <span class="np">|</span>
+                        <span>服务条款</span>
+                        <span class="np">|</span>
+                        <span>商务合作</span>
+                        <span class="np">|</span>
+                        <span>联系我们</span></li>
+                    <li>BlingBling音乐 &copy; 版权所有 【2021】 6666-666号 鲁ICP备88888888号-1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+    var login = false;
+    $('.btn').click(function() {
+        if (!login) {
+            var flag = confirm("请先注册或登录！");
+            if (flag)
+                window.location.href = "login.html";
+        }
+    });
+</script>

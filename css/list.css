@@ -1,0 +1,93 @@
+html,
+body {
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg, #ffffff 0%, #97D9E1 100%);
+}
+
+.music_list {
+    position: relative;
+    top: 15px;
+    width: 1250px;
+    height: 1650px;
+    text-align: center;
+}
+
+.content {
+    margin-top: 20px;
+    width: 100%;
+    height: 740px;
+}
+
+.infro {
+    margin: 0 25px;
+    float: left;
+    width: 21%;
+    height: 375px;
+    line-height: 28px;
+}
+
+.infro:nth-of-type(1) {
+    background: url(../images/list1.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.infro:nth-of-type(4) {
+    background: url(../images/list2.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.infro:nth-of-type(5) {
+    background: url(../images/list3.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.infro:nth-of-type(8) {
+    background: url(../images/list4.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.infro:nth-of-type(9) {
+    background: url(../images/list5.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.infro:nth-of-type(12) {
+    background: url(../images/list6.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.infro:nth-of-type(13) {
+    background: url(../images/list7.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.infro:nth-of-type(16) {
+    background: url(../images/list8.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.l_title {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #2E93D6;
+    text-align: left;
+}
+
+.l_con {
+    text-align: left;
+    width: 90%;
+    color: #666666;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.l_btn {
+    margin-top: 40px;
+    text-align: left;
+    text-indent: 30px;
+}
+
+.l_t2 {
+    text-indent: 0;
+    margin-left: 0;
+}

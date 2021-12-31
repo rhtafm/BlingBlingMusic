@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>歌单</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_con">
+            <div class="logo"><a href="index.html">BlingBling</a></div>
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="index.html">首页</a>
+                    <div></div>
+                </li>
+                <li class="nav_li"><a href="list.html" class="active_hover">歌单</a>
+                    <div></div>
+                </li>
+                <li class="nav_li"><a href="musician.html">歌手</a>
+                    <div></div>
+                </li>
+                <li class="nav_li"><a href="join.html">入驻音乐人</a>
+                    <div></div>
+                </li>
+                <li class="nav_li"><a href="login.html">登录/注册</a>
+                    <div></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="music_list">
+        <div class="content">
+            <div class="infro"></div>
+            <div class="infro">
+                <div class="l_title">Lofi自习室｜致偏要一鸣惊人的你</div>
+                <div class="l_con">歌单简介:<br>我想去的地方很远，想见的人很优秀，最重要的是，我不服！。</div>
+                <div class="l_btn">
+                    <a><img src="images/btn.png"></a>
+                </div>
+            </div>
+            <div class="infro">
+                <div class="l_title l_t2">静心轻音∶优雅学习享受成长喜悦</div>
+                <div class="l_con l_t2">歌单简介:<br>我的心灵颤抖着，用心去读每一个字，每一句话，去感受作者的心。</div>
+                <div class="l_btn l_t2">
+                    <a><img src="images/btn.png"></a>
+                </div>
+            </div>
+            <div class="infro"></div>
+            <div class="infro"></div>
+            <div class="infro">
+                <div class="l_title">忧伤日语：低落心情，无人知我</div>
+                <div class="l_con">歌单简介:<br>心情低落的时候，也不过是自己一个人，在自己的小空间里，享受寂寞的孤独。</div>
+                <div class="l_btn">
+                    <a><img src="images/btn.png"></a>
+                </div>
+            </div>
+            <div class="infro">
+                <div class="l_title l_t2">抖音热搜榜 ｜ 想听的都在榜上</div>
+                <div class="l_con l_t2">歌单简介:<br>抖音热搜榜必备的歌曲，还等什么赶紧听起来呀！欢迎补充哦。</div>
+                <div class="l_btn l_t2">
+                    <a><img src="images/btn.png"></a>
+                </div>
+            </div>
+            <div class="infro"></div>
+            <div class="infro"></div>
+            <div class="infro">
+                <div class="l_title">古风DJ｜引爆潮流！开口惊鸿人间</div>
+                <div class="l_con">歌单简介:<br>DJ国风50首,悠悠古韵＋劲爆潮流的完美合体，可叹这一曲惊鸿人间</div>
+                <div class="l_btn">
+                    <a><img src="images/btn.png"></a>
+                </div>
+            </div>
+            <div class="infro">
+                <div class="l_title l_t2">催眠丨白天的不愉快就到此而止了</div>
+                <div class="l_con l_t2">歌单简介:<br>有时候安静下来，放下手机听首音乐，你会发现许多不同的事</div>
+                <div class="l_btn l_t2">
+                    <a><img src="images/btn.png"></a>
+                </div>
+            </div>
+            <div class="infro"></div>
+            <div class="infro"></div>
+            <div class="infro">
+                <div class="l_title">秋日民谣：唱一首有故事的歌给你</div>
+                <div class="l_con">歌单简介:<br>一个人，一把吉他一首民谣，唱出一个属于他的故事~</div>
+                <div class="l_btn">
+                    <a><img src="images/btn.png"></a>
+                </div>
+            </div>
+            <div class="infro">
+                <div class="l_title l_t2">轻音驿站｜100%缓解学习疲累</div>
+                <div class="l_con l_t2">歌单简介:<br>如果你感到累了，不妨停下来歇一歇，看看窗外的风景，听听舒缓的轻音。</div>
+                <div class="l_btn l_t2">
+                    <a><img src="images/btn.png"></a>
+                </div>
+            </div>
+            <div class="infro"></div>
+        </div>
+        <input type="button" value="更多歌单" class="btn">
+    </div>
+    <div class="footer">
+        <div class="footer_con">
+            <div class="footer_font">
+                <ul>
+                    <li><a href="about.html">关于BlingBling音乐 </a>
+                        <span class="np">|</span>
+                        <span>服务条款</span>
+                        <span class="np">|</span>
+                        <span>商务合作</span>
+                        <span class="np">|</span>
+                        <span>联系我们</span></li>
+                    <li>BlingBling音乐 &copy; 版权所有 【2021】 6666-666号 鲁ICP备88888888号-1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+    var login = false;
+    $('.btn').click(function() {
+        if (!login) {
+            var flag = confirm("请先注册或登录！");
+            if (flag)
+                window.location.href = "login.html";
+        }
+    });
+</script>

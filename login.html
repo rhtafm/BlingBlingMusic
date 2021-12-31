@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BlingBling音乐</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <p id="wel">欢迎登录BlingBling音乐</p>
+    <div class="flip-modal login">
+        <!-- 展示登录页面 -->
+        <div class="modal modal-login">
+            <!-- 登录 -->
+            <a href="index.html" class="return">返回首页</a>
+            <div class="tabs">
+                <a class="login active" href="#">登录</a>
+                <a class="register" href="#">注册</a>
+            </div>
+            <div class="content">
+                <div class="errormsg"></div>
+                <form action="#">
+                    <div class="input-field">
+                        <i class="fa fa-user-o"></i>
+                        <input name="username" type="text" placeholder="邮箱">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa fa-lock"></i>
+                        <input name="password" type="password" placeholder="密码">
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" value="登录" style="cursor:pointer">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- 展示注册页面 -->
+        <div class="modal modal-register">
+            <a href="index.html" class="return">返回首页</a>
+            <div class="tabs">
+                <a class="login" href="#">登录</a>
+                <a class="register active" href="#">注册</a>
+            </div>
+            <div class="content">
+                <div class="errormsg"></div>
+                <form action="#">
+                    <div class="input-field">
+                        <i class="fa"></i>
+                        <input name="username" type="text" placeholder="输入邮箱">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa"></i>
+                        <input name="password" type="password" placeholder="输入密码">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa"></i>
+                        <input name="password2" type="password" placeholder="再次输入密码">
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" value="注册" style="cursor:pointer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/login.js"></script>
