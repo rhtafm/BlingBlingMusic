@@ -1,5 +1,5 @@
 # BlingBling音乐网
-### 展示 
+### 预览
 ![](https://s1.ax1x.com/2022/03/31/qRrwiF.md.png)
 ![](https://s1.ax1x.com/2022/03/31/qRsSQs.md.png)
 ![](https://s1.ax1x.com/2022/03/31/qRs8YD.md.png)
